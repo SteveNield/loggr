@@ -1,0 +1,28 @@
+{
+  "name": "winter-loggr",
+  "version": "1.0.1",
+  "description": "Handles multi-level logging with well-formatted timestamping",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenield/winter-loggr.git"
+  },
+  "author": "Steve Nield - Winter Softworks - steve@wintersoftworks.co.uk - http://stevenield.github.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenield/winter-loggr/issues"
+  },
+  "homepage": "https://github.com/stevenield/winter-loggr#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "sinon": "^4.3.0",
+    "sinon-chai": "^2.14.0"
+  },
+  "dependencies": {
+    "moment": "^2.20.1"
+  }
+}
