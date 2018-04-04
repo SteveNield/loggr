@@ -1,10 +1,10 @@
 {
   "name": "winter-loggr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handles multi-level logging with well-formatted timestamping",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "sinon-chai": "^2.14.0"
   },
   "dependencies": {
+    "applicationinsights": "^1.0.2",
     "moment": "^2.20.1"
   }
 }
