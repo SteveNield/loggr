@@ -23,6 +23,7 @@ function appInsightsError(err){
 }
 
 function event(eventName, props){
+  info(eventName);
   if(appinsights.defaultClient){
     info('Event '+eventName+' raised');
     appinsights.defaultClient.trackEvent({
@@ -38,6 +39,15 @@ function log(level, message){
     console.log(moment.utc(new Date()).toISOString() + ' [' + level + '] ' + message);
 }
 
+function trackRequest(req,res){
+  if(appinsights.defaultClient){
+    appinsights.defaultClient.trackNodeHttpRequest({
+      request: req,
+      response: res
+    });
+  }
+}
+
 module.exports.setupAppInsights = function(instrumentationKey){
   appinsights.setup(instrumentationKey).start();
 }
@@ -46,3 +56,4 @@ module.exports.info = info;
 module.exports.warn = warn;
 module.exports.err = err;
 module.exports.event = event;
+module.exports.trackRequest = trackRequest;

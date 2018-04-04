@@ -1,4 +1,4 @@
-var loggr = require('./index.js'),
+var loggr = require('./../index.js'),
     moment = require('moment'),
     chai = require('chai'),
     sinon = require('sinon'),
