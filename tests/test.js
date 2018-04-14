@@ -1,8 +1,8 @@
+require('winter-test-setup');
+
 var loggr = require('./../index.js'),
     moment = require('moment'),
-    chai = require('chai'),
-    sinon = require('sinon'),
-    sinonChai = require('sinon-chai');
+    applicationinsights = require('applicationinsights');
 
 const should = chai.should();
 chai.use(sinonChai);
@@ -24,7 +24,8 @@ afterEach(function(){
 function stubDeps(){
   deps = {
     moment: {},
-    console: {}
+    console: {},
+    applicationinsights: {}
   }
 
   deps.moment.utc = sandbox

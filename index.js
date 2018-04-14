@@ -48,6 +48,11 @@ function trackRequest(req,res){
   }
 }
 
+module.exports.appInsightsRequestTracking = function(req,res,next){
+  trackRequest(req,res);
+  next();
+}
+
 module.exports.setupAppInsights = function(instrumentationKey){
   appinsights.setup(instrumentationKey).start();
 }
