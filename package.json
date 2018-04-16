@@ -1,6 +1,6 @@
 {
   "name": "winter-loggr",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Handles multi-level logging with well-formatted timestamping",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "applicationinsights": "^1.0.2",
-    "moment": "^2.20.1"
+    "moment": "^2.20.1",
+    "npm": "^5.8.0"
   }
 }
