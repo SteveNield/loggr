@@ -1,8 +1,7 @@
 require('winter-test-setup');
 
 var loggr = require('./../index.js'),
-    moment = require('moment'),
-    applicationinsights = require('applicationinsights');
+    moment = require('moment');
 
 const should = chai.should();
 chai.use(sinonChai);

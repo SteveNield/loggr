@@ -24,7 +24,6 @@
     "winter-test-setup": "^1.0.0"
   },
   "dependencies": {
-    "applicationinsights": "^1.0.2",
     "moment": "^2.20.1",
     "npm": "^5.8.0"
   }
